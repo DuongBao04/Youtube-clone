@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>youtube.com clone</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/side-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+      <div class = 'header'>
+        <div class = 'left-section'>
+          <img class = 'hamburger-menu' src = 'icons/hamburger-menu.svg'>
+          <img class = 'youtube-logo' src = 'icons/youtube-logo.svg'>
+        </div>
+        <div class = 'middle-section'>
+          <input class = 'search-bar' type = 'text' placeholder = 'Search'>
+          <button class = 'search-button'>
+            <img class = 'search-icon' src="icons/search.svg">
+            <div class = 'tooltip'><p>Search</p></div>
+          </button>
+          <button class = 'voice-search-button'>
+            <img class = 'voice-search-icon' src = 'icons/voice-search-icon.svg'>
+            <div class = 'tooltip'><p>Search with your voice</p></div>
+          </button>
+        </div>
+        <div class = 'right-section'> 
+          <div class = 'upload-container'>
+            <img class ='upload-icon' src="icons/upload.svg">
+            <div class = 'tooltip'><p>Upload</p></div>
+          </div> 
+          <div class = 'youtube-app-container'>
+            <img class ='youtube-app-icon'src="icons/youtube-apps.svg">    
+            <div class = 'tooltip'><p>Youtube Apps</p></div>
+          </div>      
+          <div class = 'notifications-icon-container'>
+            <img class = 'notifications-icon' src="icons/notifications.svg">
+            <div class = 'tooltip'><p>Notifications</p></div>
+            <div class = "notifications-count"><p>3</p></div>
+          </div>
+          <div class = 'user-picture-container'>
+            <img class ='current-user-picture'src="channel-pictures/mychannel.jpg">
+          </div>
+        </div> 
+      </div>
+
+      <div class = 'side-bar'>
+        <div class = 'sidebar-link'>
+          <img src="icons/home.svg">
+          <div><p>Home</p></div>
+        </div>
+        <div class = 'sidebar-link'>
+          <img src = "icons/explore.svg">
+          <div><p>Explore</p></div>
+        </div>
+        <div class = 'sidebar-link'>
+          <img src = "icons/subscriptions.svg">
+          <div><p>Subscriptions</p></div>
+        </div>
+        <div class = 'sidebar-link'>
+          <img src = "icons/originals.svg">
+          <div><p>Originals</p></div>
+        </div>
+        <div class = 'sidebar-link'>
+          <img src = "icons/youtube-music.svg">
+          <div><p>Youtube Music</p></div>
+        </div>
+        <div class = 'sidebar-link'>
+          <img src = "icons/library.svg">
+          <div><p>Library</p></div>
+        </div>
+      </div>
+
+      <div class = 'video-grid'>
+        <!-- 1 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href = "https://youtu.be/G3e-cpL7ofc">
+              <img class = 'thumbnail' src="thumbnails/thumbnail1.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>6:31:23</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel1.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>HTML & CSS Full Course - Beginner to Pro</p>
+              <p class = 'video-author'>SuperSimpleDev <i class = 'fa fa-check-circle'></i></p>
+              <p class = 'video-stats'>5.4M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=UEuXQjPUwcw&pp=ygUrd2h5IHlvdSBzaG91ZCBub3QgdXNlIGdsb2JhbCBrZXl3b3JkIHB5dGhvbg%3D%3D">
+              <img class = 'thumbnail' src="thumbnails/thumbnail2.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>36:17</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel2.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>Why You Shouldn't Use the Global Keyword in Python</p>
+              <p class = 'video-author'>Tech With Tim</p>
+              <p class = 'video-stats'>41K views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=AY9MnQ4x3zk&pp=ygUZdGhlIHVsdGltYXRlIGludHJvZHVjdGlvbg%3D%3D"></a>
+              <img class = 'thumbnail' src="thumbnails/thumbnail3.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>3:45:07</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel3.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>The ultimate introduction to Pygame</p>
+              <p class = 'video-author'>Clear Code <i class = 'fa fa-check-circle'></i></p>
+              <p class = 'video-stats'>1.2M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=ECqUrT7IdqQ&t=276s&pp=ygU3Y3JlYXRpbmcgYSBkb29tICh3b2xmZW5zdGVpbikgLSBzdHlsZSAzZCBnYW1lIGluIHB5dGhvbg%3D%3D">
+             <img class = 'thumbnail' src="thumbnails/thumbnail4.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>1:00:23</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel4.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>Creating a DOOM (Wolfenstein) - style 3D Game in Python</p>
+              <p class = 'video-author'>Coder Space</p>
+              <p class = 'video-stats'>890K views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=s5bd9KMSSW4&pp=ygVNU3RyZWV0IEZpZ2h0ZXIgU3R5bGUgRmlnaHRpbmcgR2FtZSBpbiBQeXRob24gdXNpbmcgUHlnYW1lIC0gQ29tcGxldGUgVHV0b3JpYWw%3D">
+              <img class = 'thumbnail' src="thumbnails/thumbnail5.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>2:24:56</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel5.jpg'>
+              
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>Street Fighter Style Fighting Game in Python using Pygame - Complete Tutorial</p>
+              <p class = 'video-author'>Coding With Russ</p>
+              <p class = 'video-stats'>5.4M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=o-6pADy5Mdg&t=2144s&pp=ygUoQ3JlYXRpbmcgU3BhY2UgSW52YWRlcnMgaW4gUHlnYW1lL1B5dGhvbg%3D%3D">
+              <img class = 'thumbnail' src="thumbnails/thumbnail6.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>4:05:02</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel3.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>Creating Space Invaders in Pygame/Python</p>
+              <p class = 'video-author'>Clear Code <i class = 'fa fa-check-circle'></i></p>
+              <p class = 'video-stats'>91K views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw&t=13344s&pp=ygUMaHRtbCBhbmQgY3Nz">
+              <img class = 'thumbnail' src="thumbnails/thumbnail7.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>4:02:43</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel7.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>HTML & CSS Full Course for free 🌎 (2023)</p>
+              <p class = 'video-author'>Bro Code <i class = 'fa fa-check-circle'></i></p>
+              <p class = 'video-stats'>248K views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=Qhaz36TZG5Y&pp=ygUmMTAgQ1NTIFBybyBUaXBzIC0gQ29kZSB0aGlzLCBOT1QgdGhhdCE%3D">
+              <img class = 'thumbnail' src="thumbnails/thumbnail8.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>9:39</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel8.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>10 CSS Pro Tips - Code this, NOT that!</p>
+              <p class = 'video-author'>Fireship <i class = 'fa fa-check-circle'></i></p>
+              <p class = 'video-stats'>1.7M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=a_iQb1lnAEQ&t=2s&pp=ygUtIExlYXJuIEhUTUwgJiBDU1MgLSBGdWxsIENvdXJzZSBmb3IgQmVnaW5uZXJz">
+              <img class = 'thumbnail' src="thumbnails/thumbnail9.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>5:21:44</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel9.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>Learn HTML & CSS - Full Course for Beginners</p>
+              <p class = 'video-author'>freeCodeCamp.org</p>
+              <p class = 'video-stats'>366K views &#183; 10 months ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=OXGznpKZ_sA&t=39373s&pp=ygUoQ1NTIFR1dG9yaWFsIC0gRnVsbCBDb3Vyc2UgZm9yIEJlZ2lubmVycw%3D%3D">
+              <img class = 'thumbnail' src="thumbnails/thumbnail10.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>11:08:10</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel10.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>CSS Tutorial - Full Course for Beginners</p>
+              <p class = 'video-author'>freeCodeCamp.org</p>
+              <p class = 'video-stats'>901K views &#183; 10 months ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=GdrbE-s5DgQ&t=287s&pp=ygVLIEhvdyBUbyBDcmVhdGUgYSBSZXNwb25zaXZlIE5hdmJhciBVc2luZyBIVE1MICYgQ1NTIHwgU3RlcCBCeSBTdGVwIFR1dG9yaWFs">
+              <img class = 'thumbnail' src="thumbnails/thumbnail11.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>15:13</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel11.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>How To Create a Responsive Navbar Using HTML & CSS | Step By Step Tutorial</p>
+              <p class = 'video-author'>Web Dev Creative</p>
+              <p class = 'video-stats'>346K views &#183; 5 months ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class = 'video-preview'>
+          <div class='thumbnail-row'>
+            <a href="https://www.youtube.com/watch?v=IXucQAEkIMo&pp=ygUzIFJlc3BvbnNpdmUgV2Vic2l0ZSBVc2luZyBIVE1MIEFuZCBDU1MgU3RlcCBCeSBTdGVw">
+              <img class = 'thumbnail' src="thumbnails/thumbnail12.webp">
+            </a>
+            <div class = 'video-time'>
+              <p>25:27</p>
+            </div>
+          </div>
+          <div class = video-info-grid>
+            <div class = channel-picture>
+              <img class = 'profile-picture' src = 'channel-pictures/channel12.jpg'>
+            </div>
+            <div class = video-info>
+              <p class = 'video-title'>Responsive Website Using HTML And CSS Step By Step</p>
+              <p class = 'video-author'>Tahmid Ahmed</p>
+              <p class = 'video-stats'>312K views &#183; 7 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
